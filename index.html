@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Segundo_punto</title>
+	<script type="text/javascript">
+	var c=11;
+	</script>
+		<style type="text/css">
+		.lola{
+			position: absolute;
+			border:black;
+			height: 48%;
+			width: 48%; 
+			background-color: red;
+			left: 20%; 
+			top: 10%;
+			font-size: 58px;
+			text-align: center;
+			font-family: Aldo the Apache;
+		}
+		.lolo{
+			position: absolute;
+			border:black;
+			height: 48%;
+			width: 48%; 
+			background-color: blue;
+			left: 20%; 
+			top: 10%;
+			font-size: 58px;
+			text-align: center;
+			font-family: Aldo the Apache;
+		}
+
+
+	</style>
+</head>
+<body onload="inicio()">
+
+<script>
+function inicio(){
+	setTimeout(decre,2000);
+}
+function decre(){
+	cronometro=setInterval(dismi,1000)
+}
+function dismi(){
+	c=c-1;
+	document.getElementById('cuadro').innerHTML=(c);
+	if (c==0) {
+		clearInterval(cronometro);
+		var t=document.getElementById('cuadro').innerHTML=("Termine")
+	}
+}
+		
+</script>
+	<div id="cuadro" class="lola"><br>Aqui comienzo</div>
+</body>
+</html>
